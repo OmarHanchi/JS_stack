@@ -23,13 +23,16 @@ const pokémon = Object.freeze([
         { "id": 146, "name": "Moltres",    "types": ["fire", "flying"] },
         { "id": 148, "name": "Dragonair",  "types": ["dragon"] }
     ]);
-    
-const div3 = pokemon.filter(item=>item.id%3===0)
+
+const div3 = pokemon.filter(item=>item.id%3===0);
 console.log(div3);
-const fireType = pokemon.filter(item=>item.types[0]==="fire")
+const fireType = pokemon.filter(item=>item.types[0]==="fire");
 console.log(fireType);
-const moreThanOne = pokemon.filter(item=>item.types(length>1))
+const moreThanOne = pokemon.filter(item=>item.types(length>1));
 console.log(moreThanOne);
-const  pokemonNames = pokemon.map(item=item.['name'])
+const pokemonNames = pokemon.map(item => item.name);
 console.log(pokemonNames);
-const id99 = pokemon.filter(item => item.id>99)
+const id99 = pokemon.filter(item => item.id>99);
+const onlyPoison = pokemon.filter(item => item.types[0]="poison");
+console.log(pokemonNames);
+const secondeTypeFlying = pokemon.filter(item => item.types.includes("flying")).map(item => item.types[0]);
