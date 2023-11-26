@@ -12,13 +12,13 @@ const RegistrationForm = (props) => {
   const handleSubmit= (event) => {
     event.preventDefault()
     const newUser = {firstName,lastName,email,password,confirmPassword}
-    console.log("Welcome", newUser);
-    
     setFirstName("");
     setLastName("");
     setEmail("");
     setPassword("");
     setConfirmPassword("");
+    console.log("Welcome", newUser);
+
   };
 
   return (
@@ -55,6 +55,16 @@ const RegistrationForm = (props) => {
       </Button>
 
     </Form>
+    <div>
+      <h1>your form data </h1>
+    <p>first Name : {firstName}</p>
+    <p>last Name : {lastName}</p>
+    <p>Email : {email}</p>
+    <p>password : {password}</p>
+    <p>confirmed Password : {confirmPassword}</p>
+
+    
+    </div>
     </div>
 
   );
