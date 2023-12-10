@@ -17,7 +17,7 @@ const Form = (props) => {
 
     <form onSubmit={submitHandler} >
         <label >Color</label>
-        <input type="text" value={color} onChange={e=>setColor(e.target.value)} />
+        <input type="text" value={colour} onChange={e=>setColor(e.target.value)} />
         <button>Add</button>
     </form>
     </fieldset>
