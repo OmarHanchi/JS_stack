@@ -87,3 +87,15 @@ const someComponent = props => {
 
 
 
+//HTTP Methods:
+If you are not already familiar with HTTP request methods, here's a brief run-down:
+// GET is used for passing insensitive information
+// POST is used for passing sensitive information.
+// PUT is used for passing updating whole sensitive information.
+// PATCH is used for passing updating pieces of sensitive information.
+// DELETE is used for passing deleting sensitive information.
+
+
+
+
+
