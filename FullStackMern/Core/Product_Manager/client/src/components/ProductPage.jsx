@@ -29,6 +29,11 @@ const ProductPage = () => {
       ) : (
         <p>Loading...</p>
       )}
+    {/* Update button */}
+    <Link to="/api/product/update/:productId">
+        <button> Update Product </button>
+      </Link>
+
     {/* Go to Dashboard button */}
       <Link to="/">
         <button>Go to Dashboard</button>
