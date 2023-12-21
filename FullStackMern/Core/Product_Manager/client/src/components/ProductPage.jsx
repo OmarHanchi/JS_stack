@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams,Link } from 'react-router-dom';
 
-const ProductPage = () => {
+const ProductPage = (props) => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
 
@@ -30,7 +30,7 @@ const ProductPage = () => {
         <p>Loading...</p>
       )}
     {/* Update button */}
-    <Link to="/api/product/update/:productId">
+    <Link to={`/api/product/update/${product.id}`}>
         <button> Update Product </button>
       </Link>
 

@@ -11,7 +11,7 @@ module.exports.FindAllproduct = (req, res) => {
             console.log(Allproducts)
             res.json(Allproducts)
         })
-        .catch(err => { res.json({ message: "Wait a minute 🙄🙄" }) })
+        .catch(err => { res.json({ message: "Can't find all product🙄" }) })
 }
 
 
