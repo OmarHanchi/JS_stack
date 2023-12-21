@@ -36,9 +36,7 @@ const CreateProduct = (props) => {
   return (
       <div>
           
-          <header>
-            Product Manager
-          </header>
+         
 
           <form onSubmit={submitHandler}>
               <div className="form-fields">
